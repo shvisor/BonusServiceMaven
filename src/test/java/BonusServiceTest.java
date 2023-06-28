@@ -1,8 +1,9 @@
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BonusServiceTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 
@@ -18,7 +19,7 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForRegisteredAndOverLimit() {
         BonusService service = new BonusService();
 
@@ -34,7 +35,7 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForNotRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 
@@ -50,7 +51,7 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForNotRegisteredAndOverLimit() {
         BonusService service = new BonusService();
 
